@@ -1,0 +1,10 @@
+<svg width="160" height="48" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Apex Legal logo">
+  <rect width="160" height="48" rx="8" fill="#F4F4F5"/>
+  <g transform="translate(16,10)" fill="#6B7280">
+    <path d="M8 24 L16 0 L24 24 Z"/>
+    <rect x="34" y="4" width="4" height="20" rx="2"/>
+    <rect x="42" y="4" width="4" height="20" rx="2"/>
+    <rect x="50" y="4" width="4" height="20" rx="2"/>
+    <circle cx="96" cy="12" r="12" fill="none" stroke="#6B7280" stroke-width="4"/>
+  </g>
+</svg>

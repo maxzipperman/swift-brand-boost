@@ -1,0 +1,7 @@
+<svg width="160" height="48" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wellness Therapy logo">
+  <rect width="160" height="48" rx="8" fill="#F4F4F5"/>
+  <g transform="translate(16,10)">
+    <path d="M0,14 C8,0 20,28 28,14 C36,0 48,28 56,14" stroke="#6B7280" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="96" cy="14" r="10" fill="#6B7280"/>
+  </g>
+</svg>

@@ -7,6 +7,7 @@ import MetricCard from "@/components/Common/MetricCard";
 import Stepper from "@/components/Common/Stepper";
 import TestimonialCard from "@/components/Common/TestimonialCard";
 import LeadCapture from "@/components/Common/LeadCapture";
+import IndustriesSection from "@/components/Common/IndustriesSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Shield, Users, Target, ArrowRight } from "lucide-react";
@@ -104,6 +105,9 @@ const Index = () => {
       <Header />
       
       <main>
+        {/* Industries Section (Top) */}
+        <IndustriesSection />
+
         {/* Hero Section */}
         <Hero
           title="Custom-coded websites that win trust and drive results"

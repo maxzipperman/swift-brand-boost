@@ -1,31 +1,37 @@
+import apexLegal from "@/assets/logos/apex-legal.svg";
+import sterlingCpa from "@/assets/logos/sterling-cpa.svg";
+import wellnessTherapy from "@/assets/logos/wellness-therapy.svg";
+import strataConsult from "@/assets/logos/strataconsult.svg";
+import premierFinancial from "@/assets/logos/premier-financial.svg";
+
 const LogoCloud = () => {
   const logos = [
-    { name: "Legal Partners LLC", width: "w-32" },
-    { name: "Smith & Associates CPA", width: "w-28" },
-    { name: "Wellness Therapy Group", width: "w-36" },
-    { name: "Strategic Business Consultants", width: "w-40" },
-    { name: "Premier Financial Advisors", width: "w-32" },
+    { name: "Apex Legal", src: apexLegal, width: "w-36" },
+    { name: "Sterling CPA", src: sterlingCpa, width: "w-36" },
+    { name: "Wellness Therapy", src: wellnessTherapy, width: "w-36" },
+    { name: "StrataConsult", src: strataConsult, width: "w-36" },
+    { name: "Premier Financial", src: premierFinancial, width: "w-36" },
   ];
 
   return (
-    <section className="py-12 bg-brand-neutral-50">
+    <section className="py-12 bg-brand-neutral-50" aria-labelledby="trusted-by-heading">
       <div className="container">
         <div className="text-center mb-8">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
+          <p id="trusted-by-heading" className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
             Trusted by Professional Services
           </p>
         </div>
         
-        <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className={`${logo.width} h-16 bg-brand-neutral-200 rounded flex items-center justify-center`}
-            >
-              <span className="text-xs font-medium text-brand-neutral-600 text-center px-2">
-                {logo.name}
-              </span>
-            </div>
+        <div className="flex flex-wrap items-center justify-center gap-8 opacity-80">
+          {logos.map((logo) => (
+            <img
+              key={logo.name}
+              src={logo.src}
+              alt={`${logo.name} logo - trusted by professional services`}
+              className={`${logo.width} h-12 object-contain`}
+              loading="lazy"
+              height={48}
+            />
           ))}
         </div>
         
