@@ -13,7 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Zap, Shield, Users, Target, ArrowRight } from "lucide-react";
 
-console.log("Index page is loading...");
+console.log("Index page is loading..."); // Force rebuild
 
 const Index = () => {
   console.log("Index component rendering...");

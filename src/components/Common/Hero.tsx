@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
+// Force rebuild - fix Link reference error
 interface HeroProps {
   title: string;
   subtitle: string;
