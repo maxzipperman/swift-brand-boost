@@ -11,7 +11,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Shield, Users, Target, ArrowRight } from "lucide-react";
 
+console.log("Index page is loading...");
+
 const Index = () => {
+  console.log("Index component rendering...");
   const valueProps = [
     {
       icon: <Zap className="w-6 h-6" />,
@@ -92,6 +95,8 @@ const Index = () => {
       "contactType": "customer service"
     }
   };
+
+  console.log("About to render Index component");
 
   return (
     <>
