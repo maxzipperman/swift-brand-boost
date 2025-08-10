@@ -106,15 +106,16 @@ const Index = () => {
       <Header />
       
       <main>
-        {/* Industries Section (Top) */}
-        <IndustriesSection />
-
         {/* Hero Section */}
         <Hero
           title="Custom-coded websites that win trust and drive results"
           subtitle="Blazing-fast, brand-driven websites for lawyers, accountants, consultants, and therapists. No templates. No platform lock-in. Just results."
           ctaSecondary="View Our Work"
         />
+
+        {/* Industries Section */}
+        <IndustriesSection />
+
 
         {/* Trust Strip */}
         <LogoCloud />
