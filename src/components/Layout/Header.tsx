@@ -45,8 +45,8 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
-          <Button size="sm" className="ml-4">
-            Book Discovery Call
+          <Button asChild size="sm" className="ml-4">
+            <Link to="/contact">Book Discovery Call</Link>
           </Button>
         </nav>
 
@@ -78,8 +78,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="w-full mt-4">
-              Book Discovery Call
+            <Button asChild size="sm" className="w-full mt-4">
+              <Link to="/contact">Book Discovery Call</Link>
             </Button>
           </div>
         </div>

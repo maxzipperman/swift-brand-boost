@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
 interface HeroProps {
@@ -28,12 +29,12 @@ const Hero = ({
               {subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="shadow-elegant">
-                {ctaText}
+              <Button asChild size="lg" className="shadow-elegant">
+                <Link to="/contact">{ctaText}</Link>
               </Button>
               {ctaSecondary && (
-                <Button variant="outline" size="lg">
-                  {ctaSecondary}
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/case-studies">{ctaSecondary}</Link>
                 </Button>
               )}
             </div>

@@ -10,6 +10,7 @@ import LeadCapture from "@/components/Common/LeadCapture";
 import IndustriesSection from "@/components/Common/IndustriesSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { Zap, Shield, Users, Target, ArrowRight } from "lucide-react";
 
 console.log("Index page is loading...");
@@ -180,9 +181,11 @@ const Index = () => {
                 </Card>
               </div>
               
-              <Button size="lg" className="group">
-                View Case Studies
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button asChild size="lg" className="group">
+                <Link to="/case-studies">
+                  View Case Studies
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -244,11 +247,11 @@ const Index = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="shadow-elegant">
-                Book Discovery Call
+              <Button asChild size="lg" className="shadow-elegant">
+                <Link to="/contact">Book Discovery Call</Link>
               </Button>
-              <Button variant="outline" size="lg">
-                View Our Services
+              <Button asChild variant="outline" size="lg">
+                <Link to="/services">View Our Services</Link>
               </Button>
             </div>
           </div>
