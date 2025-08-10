@@ -4,6 +4,7 @@ import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import consultingHero from "@/assets/industries/consulting-hero.jpg";
+import ValuePropsSection from "@/components/Common/ValuePropsSection";
 
 const Consulting = () => {
   return (
@@ -22,6 +23,7 @@ const Consulting = () => {
           imageSrc={consultingHero}
           imageAlt="Consulting industry hero - abstract growth arrows and citylines"
         />
+        <ValuePropsSection industryKey="consulting" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">

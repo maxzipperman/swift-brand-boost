@@ -4,6 +4,7 @@ import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import legalHero from "@/assets/industries/legal-hero.jpg";
+import ValuePropsSection from "@/components/Common/ValuePropsSection";
 
 const Legal = () => {
   return (
@@ -22,6 +23,7 @@ const Legal = () => {
           imageSrc={legalHero}
           imageAlt="Legal industry hero - abstract courthouse and scales"
         />
+        <ValuePropsSection industryKey="legal" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">

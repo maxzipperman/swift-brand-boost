@@ -5,6 +5,7 @@ import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import { Button } from "@/components/ui/button";
 import accountingHero from "@/assets/industries/accounting-hero.jpg";
+import ValuePropsSection from "@/components/Common/ValuePropsSection";
 
 const Accounting = () => {
   return (
@@ -34,6 +35,7 @@ const Accounting = () => {
             </div>
           </div>
         </section>
+        <ValuePropsSection industryKey="accounting" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">

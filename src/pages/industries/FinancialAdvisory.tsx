@@ -4,6 +4,7 @@ import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import financialHero from "@/assets/industries/financial-hero.jpg";
+import ValuePropsSection from "@/components/Common/ValuePropsSection";
 
 const FinancialAdvisory = () => {
   return (
@@ -22,6 +23,7 @@ const FinancialAdvisory = () => {
           imageSrc={financialHero}
           imageAlt="Financial advisory hero - abstract layered glass and growth lines"
         />
+        <ValuePropsSection industryKey="financial" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">
