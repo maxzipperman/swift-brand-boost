@@ -4,53 +4,49 @@ import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import PackageCard from "@/components/Common/PackageCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import SegmentExpectations from "@/components/Services/SegmentExpectations";
 
 const Services = () => {
   const packages = [
     {
-      title: "Website Tune-Up",
+      title: "Strategy Sprint",
       price: "$1,500–$2,500",
-      description: "Perfect for firms with decent sites that need speed and messaging improvements",
+      description: "2-week sprint: brand voice, homepage wire, CTA map, and SEO outline. Paid upfront; anchors the premium build.",
       features: [
-        "1-3 page refresh and optimization",
-        "Core Web Vitals performance fixes",
-        "Light messaging improvements",
-        "Mobile responsiveness fixes",
-        "Basic SEO optimization",
-        "Speed optimization (target <2s load)",
-        "2-week turnaround"
+        "Brand voice starter and messaging clarity",
+        "Homepage wireframe and section map",
+        "CTA and inquiry path mapping",
+        "SEO outline (keywords, structure, schema)",
+        "2-week turnaround, stakeholder review",
+        "Deliverables you keep regardless of build"
       ]
     },
     {
-      title: "Brand Refresh",
-      price: "$2,750–$5,000",
-      description: "Complete redesign with strategic messaging for growing practices",
+      title: "Launch Build",
+      price: "$6,000–$9,500",
+      description: "3–5 page hand-coded, speed-first site with conversion copy. No templates. You own the code.",
       features: [
-        "5-page complete redesign",
-        "Comprehensive messaging overhaul",
-        "Competitor analysis & positioning",
-        "Advanced SEO optimization",
-        "Contact form optimization",
-        "Mobile-first responsive design",
-        "4-6 week turnaround",
-        "Basic analytics setup"
+        "3–5 key pages (Home, Services, About, Contact, Optional: Case/Blog)",
+        "Custom copy included (from Sprint outputs)",
+        "Performance engineered for Core Web Vitals",
+        "Local SEO basics + structured data",
+        "Compliant forms + Calendly integration",
+        "Analytics + privacy-friendly tracking",
+        "Typical timeline: 3–6 weeks"
       ],
       recommended: true
     },
     {
-      title: "Premium Brand Experience",
-      price: "$5,000–$7,500",
-      description: "Full-scale brand transformation for established firms ready to dominate their market",
+      title: "Care & Content",
+      price: "$250–$600/mo",
+      description: "Light maintenance + quarterly updates. Keep performance high and pages current.",
       features: [
-        "7+ page comprehensive website",
-        "Full discovery & strategy session",
-        "Complete competitor analysis",
-        "Professional copywriting",
-        "Advanced conversion optimization",
-        "Blog/resource section setup",
-        "Advanced analytics & tracking",
-        "6-8 week turnaround",
-        "3 months post-launch support"
+        "Quarterly content/design updates",
+        "Speed, accessibility, and SEO checks",
+        "Small enhancements and experiments",
+        "Optional landing pages for campaigns",
+        "Priority support window",
+        "Cancel anytime — no platform lock-in"
       ]
     }
   ];
@@ -103,8 +99,8 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Web Design Services for Professional Services"
-        description="Custom website packages for lawyers, accountants, consultants, and therapists. From quick tune-ups to complete brand transformations."
+        title="Strategy Sprint, Launch Build, Care Plans"
+        description="Three-offer architecture for trust-driven pros: sprint, hand-coded launch, and ongoing care. Premium-accessible pricing."
         schema={serviceSchema}
       />
       <Header />
@@ -115,6 +111,9 @@ const Services = () => {
           subtitle="From quick performance fixes to complete brand transformations. Choose the package that fits your practice's needs and budget."
           showImage={false}
         />
+
+        {/* Segment Expectations */}
+        <SegmentExpectations />
 
         {/* Intro Section */}
         <section className="section-padding">
@@ -133,10 +132,10 @@ const Services = () => {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Choose Your Package
+                Our 3-offer architecture
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Whether you need a quick refresh or a complete transformation, we have a solution that fits your needs and budget.
+                Strategy Sprint, Launch Build, and Care & Content — a simple path from clarity to launch to steady improvements.
               </p>
             </div>
             
@@ -148,60 +147,7 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Comparison Table */}
-        <section className="section-padding">
-          <div className="container space-y-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-4">Package Comparison</h2>
-              <p className="text-muted-foreground">See what's included in each package</p>
-            </div>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-border">
-                <thead>
-                  <tr className="bg-brand-neutral-50">
-                    <th className="border border-border p-4 text-left">Feature</th>
-                    <th className="border border-border p-4 text-center">Tune-Up</th>
-                    <th className="border border-border p-4 text-center">Brand Refresh</th>
-                    <th className="border border-border p-4 text-center">Premium Experience</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-border p-4 font-medium">Pages Included</td>
-                    <td className="border border-border p-4 text-center">1-3</td>
-                    <td className="border border-border p-4 text-center">5</td>
-                    <td className="border border-border p-4 text-center">7+</td>
-                  </tr>
-                  <tr className="bg-brand-neutral-50/50">
-                    <td className="border border-border p-4 font-medium">Timeline</td>
-                    <td className="border border-border p-4 text-center">2 weeks</td>
-                    <td className="border border-border p-4 text-center">4-6 weeks</td>
-                    <td className="border border-border p-4 text-center">6-8 weeks</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-border p-4 font-medium">Custom Copywriting</td>
-                    <td className="border border-border p-4 text-center">Light edits</td>
-                    <td className="border border-border p-4 text-center">✓</td>
-                    <td className="border border-border p-4 text-center">✓ Professional</td>
-                  </tr>
-                  <tr className="bg-brand-neutral-50/50">
-                    <td className="border border-border p-4 font-medium">SEO Optimization</td>
-                    <td className="border border-border p-4 text-center">Basic</td>
-                    <td className="border border-border p-4 text-center">Advanced</td>
-                    <td className="border border-border p-4 text-center">Comprehensive</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-border p-4 font-medium">Post-Launch Support</td>
-                    <td className="border border-border p-4 text-center">1 week</td>
-                    <td className="border border-border p-4 text-center">1 month</td>
-                    <td className="border border-border p-4 text-center">3 months</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+        {/* Offer architecture emphasises clarity over feature matrices */}
 
         {/* FAQ */}
         <section className="section-padding bg-brand-neutral-50">
@@ -243,12 +189,12 @@ const Services = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 font-medium shadow-elegant">
-                Book Discovery Call
-              </button>
-              <button className="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 font-medium">
-                View Case Studies
-              </button>
+              <a href="https://calendly.com/" target="_blank" rel="noreferrer" className="bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 font-medium shadow-elegant text-center">
+                Book on Calendly
+              </a>
+              <a href="/contact?audit=1" className="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 font-medium text-center">
+                Request Loom Mini‑Audit
+              </a>
             </div>
           </div>
         </section>

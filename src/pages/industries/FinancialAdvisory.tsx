@@ -5,6 +5,7 @@ import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import financialHero from "@/assets/industries/financial-hero.jpg";
 import ValuePropsSection from "@/components/Common/ValuePropsSection";
+import SegmentExpectationsCompact from "@/components/Common/SegmentExpectationsCompact";
 
 const FinancialAdvisory = () => {
   return (
@@ -24,6 +25,7 @@ const FinancialAdvisory = () => {
           imageAlt="Financial advisory hero - abstract layered glass and growth lines"
         />
         <ValuePropsSection industryKey="financial" />
+        <SegmentExpectationsCompact segmentKey="professional" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">

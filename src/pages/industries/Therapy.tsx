@@ -5,6 +5,7 @@ import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
 import therapyHero from "@/assets/industries/therapy-hero.jpg";
 import ValuePropsSection from "@/components/Common/ValuePropsSection";
+import SegmentExpectationsCompact from "@/components/Common/SegmentExpectationsCompact";
 
 const Therapy = () => {
   return (
@@ -24,6 +25,7 @@ const Therapy = () => {
           imageAlt="Therapy industry hero - soft organic shapes and calm gradients"
         />
         <ValuePropsSection industryKey="therapy" />
+        <SegmentExpectationsCompact segmentKey="professional" />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">
