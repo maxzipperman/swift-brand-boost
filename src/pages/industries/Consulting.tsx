@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import consultingHero from "@/assets/industries/consulting-hero.jpg";
 
 const Consulting = () => {
   return (
@@ -18,6 +19,8 @@ const Consulting = () => {
           subtitle="Elevate your authority with case studies, IP, and clear service offers."
           ctaText="Book a Discovery Call"
           ctaSecondary="View Case Studies"
+          imageSrc={consultingHero}
+          imageAlt="Consulting industry hero - abstract growth arrows and citylines"
         />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">

@@ -9,6 +9,8 @@ interface HeroProps {
   ctaText?: string;
   ctaSecondary?: string;
   showImage?: boolean;
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 const Hero = ({ 
@@ -16,7 +18,9 @@ const Hero = ({
   subtitle, 
   ctaText = "Book Discovery Call", 
   ctaSecondary,
-  showImage = true 
+  showImage = true,
+  imageSrc,
+  imageAlt,
 }: HeroProps) => {
   return (
     <section className="relative overflow-hidden bg-gradient-subtle">
@@ -44,9 +48,10 @@ const Hero = ({
           {showImage && (
             <div className="animate-fade-in-delay">
               <img
-                src={heroImage}
-                alt="Position Digital - Web Design Excellence"
+                src={imageSrc ?? heroImage}
+                alt={imageAlt ?? `${title} - Position Digital`}
                 className="rounded-lg shadow-card w-full h-auto"
+                loading="eager"
               />
             </div>
           )}

@@ -1,21 +1,29 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Industries", href: "/#industries" },
     { name: "Services", href: "/services" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Testimonials", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
+  ];
+
+  const industriesList = [
+    { name: "Legal", href: "/industries/legal" },
+    { name: "Accounting", href: "/industries/accounting" },
+    { name: "Consulting", href: "/industries/consulting" },
+    { name: "Therapy", href: "/industries/therapy" },
+    { name: "Financial Advisory", href: "/industries/financial-advisory" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -32,19 +40,55 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          {/* Industries Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIndustriesOpen(true)}
+            onMouseLeave={() => setIndustriesOpen(false)}
+          >
+            <button
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname.startsWith("/industries")
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              } flex items-center gap-1`}
+              aria-haspopup="menu"
+              aria-expanded={industriesOpen}
+            >
+              Industries <ChevronDown className="h-4 w-4" />
+            </button>
+            {industriesOpen && (
+              <div className="absolute left-0 top-full mt-2 w-64 rounded-md border bg-popover text-foreground shadow-lg z-50">
+                <ul className="py-2">
+                  {industriesList.map((item) => (
+                    <li key={item.name}>
+                      <Link
+                        to={item.href}
+                        className="block px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => setIndustriesOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Other Links */}
           {navigation.map((item) => (
             <Link
               key={item.name}
               to={item.href}
               className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive(item.href)
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                isActive(item.href) ? "text-primary" : "text-muted-foreground"
               }`}
             >
               {item.name}
             </Link>
           ))}
+
           <Button asChild size="sm" className="ml-4">
             <Link to="/contact">Book Discovery Call</Link>
           </Button>

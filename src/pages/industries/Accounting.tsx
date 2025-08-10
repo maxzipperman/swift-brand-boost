@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import accountingHero from "@/assets/industries/accounting-hero.jpg";
 
 const Accounting = () => {
   return (
@@ -18,6 +19,8 @@ const Accounting = () => {
           subtitle="Build trust with transparent service pages, social proof, and fast performance."
           ctaText="Book a Discovery Call"
           ctaSecondary="View Services"
+          imageSrc={accountingHero}
+          imageAlt="Accounting industry hero - abstract calculator and ledger"
         />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">

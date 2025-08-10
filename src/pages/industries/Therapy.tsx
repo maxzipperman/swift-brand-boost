@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import therapyHero from "@/assets/industries/therapy-hero.jpg";
 
 const Therapy = () => {
   return (
@@ -18,6 +19,8 @@ const Therapy = () => {
           subtitle="Create a calm, welcoming experience that helps clients take the first step."
           ctaText="Book a Discovery Call"
           ctaSecondary="See Approaches"
+          imageSrc={therapyHero}
+          imageAlt="Therapy industry hero - soft organic shapes and calm gradients"
         />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">

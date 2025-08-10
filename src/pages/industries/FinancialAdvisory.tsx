@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import financialHero from "@/assets/industries/financial-hero.jpg";
 
 const FinancialAdvisory = () => {
   return (
@@ -18,6 +19,8 @@ const FinancialAdvisory = () => {
           subtitle="Clarity, credibility, and speed for decisions that matter."
           ctaText="Book a Discovery Call"
           ctaSecondary="View Services"
+          imageSrc={financialHero}
+          imageAlt="Financial advisory hero - abstract layered glass and growth lines"
         />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">

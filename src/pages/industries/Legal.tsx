@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import legalHero from "@/assets/industries/legal-hero.jpg";
 
 const Legal = () => {
   return (
@@ -18,6 +19,8 @@ const Legal = () => {
           subtitle="Position your firm as the obvious choice with messaging clarity, proof, and performance."
           ctaText="Book a Discovery Call"
           ctaSecondary="View Case Studies"
+          imageSrc={legalHero}
+          imageAlt="Legal industry hero - abstract courthouse and scales"
         />
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
