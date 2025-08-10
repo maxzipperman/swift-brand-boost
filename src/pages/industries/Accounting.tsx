@@ -3,6 +3,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import SEO from "@/components/Layout/SEO";
 import Hero from "@/components/Common/Hero";
+import { Button } from "@/components/ui/button";
 import accountingHero from "@/assets/industries/accounting-hero.jpg";
 
 const Accounting = () => {
@@ -14,7 +15,9 @@ const Accounting = () => {
       />
       <Header />
       <main>
+        <h1 className="sr-only">Accounting Websites that Instill Confidence</h1>
         <Hero 
+          visualOnly
           title="Accounting Websites that Instill Confidence"
           subtitle="Build trust with transparent service pages, social proof, and fast performance."
           ctaText="Book a Discovery Call"
@@ -22,6 +25,15 @@ const Accounting = () => {
           imageSrc={accountingHero}
           imageAlt="Accounting industry hero - abstract calculator and ledger"
         />
+        <section className="py-8">
+          <div className="container">
+            <div className="flex justify-center">
+              <Button asChild size="lg" className="shadow-elegant">
+                <Link to="/contact">Book a Discovery Call</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
         <section className="section-padding">
           <div className="container grid gap-8 md:grid-cols-2">
             <article className="space-y-4">

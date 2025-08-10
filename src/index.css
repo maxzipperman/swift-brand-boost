@@ -10,7 +10,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 268 83% 60%;
+    --primary: 218 72% 42%;
     --primary-foreground: 210 40% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 268 83% 60%;
+    --ring: 218 72% 42%;
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -31,9 +31,9 @@
     --chart-5: 27 87% 67%;
     
     /* Position Digital Brand Colors (HSL) */
-    --brand-primary: 268 83% 60%;
-    --brand-secondary: 268 100% 85%;
-    --brand-accent: 275 72% 47%;
+    --brand-primary: 218 72% 42%; /* Navy */
+    --brand-secondary: 218 90% 60%; /* Lighter Navy */
+    --brand-accent: 200 80% 45%; /* Teal Accent */
     --brand-neutral-50: 0 0% 98%;
     --brand-neutral-100: 240 4.8% 95.9%;
     --brand-neutral-200: 240 5.9% 90%;
@@ -112,6 +112,9 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
