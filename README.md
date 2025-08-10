@@ -71,3 +71,12 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Continuous Integration (CI)
+A GitHub Actions workflow is included at `.github/workflows/ci.yml` to lint and build the app on every push/PR to `main` using Node 20.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Push to GitHub
+Use Lovable’s GitHub integration: GitHub (top bar) -> Connect to GitHub -> Create Repository. Edits in Lovable and GitHub will sync both ways.
